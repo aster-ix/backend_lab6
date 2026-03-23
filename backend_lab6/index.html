@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quest API</title>
+  <style>
+    body { font-family: sans-serif; padding: 2rem; }
+    table { border-collapse: collapse; margin-top: 1rem; }
+    th, td { border: 1px solid #ccc; padding: 8px 16px; text-align: left; }
+    th { background: #f0f0f0; }
+  </style>
+</head>
+<body>
+
+  <h1>Василенко Наталия | 241-333 </h1>
+  <p><a href="/swagger">Swagger UI</a></p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>URL</th>
+        <th>Метод</th>
+        <th>Статус</th>
+        <th>Результат</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>/api/quests</td>
+        <td>GET</td>
+        <td>200 OK</td>
+        <td>Список всех квестов</td>
+      </tr>
+      <tr>
+        <td>/api/quests/{id}</td>
+        <td>GET</td>
+        <td>200 OK</td>
+        <td>Квест по id</td>
+      </tr>
+      <tr>
+        <td>/api/quests/{id}</td>
+        <td>GET</td>
+        <td>404 Not Found</td>
+        <td>Квест не найден</td>
+      </tr>
+      <tr>
+        <td>/api/quests</td>
+        <td>POST</td>
+        <td>201 Created</td>
+        <td>Созданный квест с id и createdAt</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
